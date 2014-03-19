@@ -20,6 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImageView *bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ios-lab-starts-creen"]];
+    bgImageView.frame = self.view.bounds;
+    [UIView animateWithDuration:3.0 animations:^{
+        [self.view addSubview:bgImageView];
+        [self.view sendSubviewToBack:bgImageView];
+    }];
     
     NSMutableArray *dataArr = [NSMutableArray new];
     int count = arc4random() % 3 + 1;
@@ -29,7 +35,7 @@
     NSLog(@"%@", dataArr);
     scheduleView = [[ScheduleView alloc] initWithData:dataArr];
     scheduleView.frame = CGRectMake(10, 50, 300, 400);
-    scheduleView.backgroundColor = [UIColor colorWithRed:0.773 green:0.889 blue:1.000 alpha:1.000];
+    scheduleView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:scheduleView];
 }
 
