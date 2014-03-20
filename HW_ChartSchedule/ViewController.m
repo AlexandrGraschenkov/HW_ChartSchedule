@@ -25,6 +25,7 @@
     int count = arc4random() % 3 + 1;
     for(int i = 0; i < count; i++){
         [dataArr addObject:@(arc4random() % 50 + 25)];
+        
     }
     NSLog(@"%@", dataArr);
     scheduleView = [[ScheduleView alloc] initWithData:dataArr];
