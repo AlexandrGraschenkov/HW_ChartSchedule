@@ -5,43 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>70197F6B-83D9-4B67-9D2C-056918C5C0FC</string>
+	<string>97A43DB0-303C-420A-88D9-5DA97E6FBCDB</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HW_ChartSchedule</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CA5B17C2-C9F2-4FBD-A7DF-2D65EA4D4B71</key>
-		<string>https://github.com/nastya13/HW_ChartSchedule.git/trunk</string>
-	</dict>
-	<key>IDESourceControlProjectPath</key>
-	<string>trunk/HW_ChartSchedule.xcodeproj/project.xcworkspace</string>
-	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
-	<dict>
-		<key>CA5B17C2-C9F2-4FBD-A7DF-2D65EA4D4B71</key>
-		<string>../../..</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>CA5B17C2-C9F2-4FBD-A7DF-2D65EA4D4B71</key>
+		<key>B1F5B559-EC4C-4DD4-A926-B1FCD0806E9A</key>
 		<string>https://github.com/nastya13/HW_ChartSchedule.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HW_ChartSchedule.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B1F5B559-EC4C-4DD4-A926-B1FCD0806E9A</key>
+		<string>../..</string>
+	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nastya13/HW_ChartSchedule.git/trunk/trunk/HW_ChartSchedule.xcodeproj</string>
+	<string>https://github.com/nastya13/HW_ChartSchedule.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CA5B17C2-C9F2-4FBD-A7DF-2D65EA4D4B71</string>
+	<string>B1F5B559-EC4C-4DD4-A926-B1FCD0806E9A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
-			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
-			<string>branches</string>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
-			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
-			<string>trunk</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CA5B17C2-C9F2-4FBD-A7DF-2D65EA4D4B71</string>
+			<string>B1F5B559-EC4C-4DD4-A926-B1FCD0806E9A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HW_ChartSchedule</string>
 		</dict>
