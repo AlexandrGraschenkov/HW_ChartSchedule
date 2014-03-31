@@ -98,7 +98,6 @@
             float red=0;
             float green=0;
             float blue=0;
-            //int rr= frame.size.height-[values[i] integerValue];
             
             for (int i=0; i< COUNT; i++) {
                 CGRect viewFrame = CGRectMake(x, frame.size.height-40-[values[i] integerValue], SELF_X, [values[i] integerValue]);
