@@ -40,11 +40,6 @@
         graphs.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
         [right addSubview:graphs];
     }
-    int sum = 0;
-    for(int i = 0; i < values.count; i++) {
-        sum = sum + [(NSNumber *)[values objectAtIndex:i] integerValue];
-    }
-    NSLog(@"%d",sum);
     [self addSubview:right];
     
     return self;
