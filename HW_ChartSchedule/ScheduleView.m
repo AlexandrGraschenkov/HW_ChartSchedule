@@ -35,7 +35,7 @@
     size_t width = 56 / (values.count + 1);
     for(int i = 0; i < values.count; i++) {
         int value = [[values objectAtIndex:i] integerValue];
-        UIView *graphs = [[UIView alloc] initWithFrame:CGRectMake((i+1)*width, 91-value*0.91, 5, value*0.91)];
+        UIView *graphs = [[UIView alloc] initWithFrame:CGRectMake((i+1)*width-4, 91-value*0.91, 10, value*0.91)];
         [graphs setBackgroundColor:[UIColor greenColor]];
         graphs.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
         [right addSubview:graphs];
