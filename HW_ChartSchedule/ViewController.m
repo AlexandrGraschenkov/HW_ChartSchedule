@@ -22,14 +22,13 @@
     [super viewDidLoad];
     
     NSMutableArray *dataArr = [NSMutableArray new];
-    int count = arc4random() % 3 + 1;
+    int count = arc4random() % 5 + 1;
     for(int i = 0; i < count; i++){
-        [dataArr addObject:@(arc4random() % 50 + 25)];
+        [dataArr addObject:@(arc4random() % 91 + 10)];
     }
-    NSLog(@"%@", dataArr);
     scheduleView = [[ScheduleView alloc] initWithData:dataArr];
     scheduleView.frame = CGRectMake(10, 50, 300, 400);
-    scheduleView.backgroundColor = [UIColor colorWithRed:0.773 green:0.889 blue:1.000 alpha:1.000];
+    scheduleView.backgroundColor = [UIColor colorWithRed:1.000 green:0.409 blue:0.555 alpha:0.555];
     [self.view addSubview:scheduleView];
 }
 
