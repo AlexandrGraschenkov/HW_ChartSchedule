@@ -13,18 +13,50 @@
 // количество элементов может менятся, ваша задача раcположить их равномерно
 - (id)initWithData:(NSArray*)values
 {
-    self = [super initWithFrame:CGRectMake(0, 0, 300, 400)];
-    if (self) {
-        // example
-        CGRect frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-        UILabel *label = [[UILabel alloc] initWithFrame:frame];
-        label.text = @"На этом месте\n могла быть\n ваша реклама";
-        label.backgroundColor = [UIColor clearColor];
-        label.numberOfLines = 0;
-        label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        [self addSubview:label];
-        
+    self = [super initWithFrame:CGRectMake(0, 0, 100, 100)];
+    // [self setBackgroundColor:[UIColor colorWithRed:1 green:0.889 blue:0.900 alpha:1.000];
+    
+    // example
+    //CGRect frame = CGRectMake(0, 0, 100, 100);
+    self.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    UIView *left = [[UIView alloc]initWithFrame:CGRectMake(5, 5, 30, 95)]; //поле с числами
+    left.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleTopMargin; //числа
+    UIView *main= [[UIView alloc] initWithFrame:CGRectMake(40, 5, 55, 90)];
+    main.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+    //    UIView *back =[[UIView alloc] initWithFrame:CGRectMake(10, 5, 30, 85)];
+    //    back.autoresizingMask = UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    
+    for (int i=0; i<5; i++)
+    {
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20*(4-i), 30, 15)];
+        label.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleTopMargin;
+        //NSString *percent = @"rwtg";
+        [label setText:[NSString stringWithFormat:@"%d", i*25]];
+        [left addSubview:label];
+        if (i==4)
+        {
+            label.autoresizingMask = UIViewAnimationTransitionNone;
+        }
     }
+    [self addSubview:left];
+    
+    size_t width = 30/(values.count+1);
+    for (int i = 0; i<values.count; i++){
+        int value = [[values objectAtIndex:i]integerValue];
+        
+        
+        UIView *line = [[UIView alloc] initWithFrame:CGRectMake((i+1)*width+12, 91-value*0.91, 7, value*0.90)];
+        line.autoresizingMask = UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleLeftMargin|
+        UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+        
+        
+        [line setBackgroundColor:[UIColor colorWithRed:0.700 green:0.869 blue:1.0 alpha:1]];
+        [main setBackgroundColor:[UIColor whiteColor]];
+        [main addSubview:line];
+        [self addSubview:main];
+    }
+    
+    
     return self;
 }
 
@@ -32,3 +64,7 @@
 
 
 @end
+
+
+
+
