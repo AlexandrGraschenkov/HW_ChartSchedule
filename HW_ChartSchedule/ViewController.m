@@ -29,7 +29,7 @@
     NSLog(@"%@", dataArr);
     scheduleView = [[ScheduleView alloc] initWithData:dataArr];
     scheduleView.frame = CGRectMake(10, 50, 300, 400);
-    scheduleView.backgroundColor = [UIColor colorWithRed:0.773 green:0.889 blue:1.000 alpha:1.000];
+    scheduleView.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:scheduleView];
 }
 

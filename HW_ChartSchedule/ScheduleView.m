@@ -14,17 +14,33 @@
 - (id)initWithData:(NSArray*)values
 {
     self = [super initWithFrame:CGRectMake(0, 0, 300, 400)];
-    if (self) {
-        // example
-        CGRect frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-        UILabel *label = [[UILabel alloc] initWithFrame:frame];
-        label.text = @"На этом месте\n могла быть\n ваша реклама";
-        label.backgroundColor = [UIColor clearColor];
-        label.numberOfLines = 0;
-        label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        [self addSubview:label];
+    self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    
+    UIView *scaleHeight = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 400)];
+    scaleHeight.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    int value = 100;
+    for (int i = 0; i <= 4; i++) {
+        UILabel *height = [[UILabel alloc] initWithFrame: CGRectMake(7, 95*i, 40, 20)];
+        height.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAnimationTransitionNone | UIViewAutoresizingFlexibleHeight;
+        height.text = [[NSNumber numberWithInt:value] stringValue];
+        value -= 25;
+        [self addSubview: height];
         
     }
+    [self addSubview: scaleHeight];
+    
+    UIView *graphsWindow = [[UIView alloc] initWithFrame:CGRectMake(40, 10, 250, 380)];
+    graphsWindow.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    graphsWindow.backgroundColor = [UIColor whiteColor];
+    for (int i = 0; i < values.count; i++) {
+        UIView *graphs = [[UIView alloc] initWithFrame:CGRectMake(250/(values.count)*i+40, 380 - ([[values objectAtIndex:i] integerValue]*3.8), 220/(values.count*2), [[values objectAtIndex:i] integerValue]*3.8)];
+        graphs.backgroundColor = [UIColor greenColor];
+        graphs.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+        [graphsWindow addSubview:graphs];
+    }
+    
+    [self addSubview:graphsWindow];
+    
     return self;
 }
 
