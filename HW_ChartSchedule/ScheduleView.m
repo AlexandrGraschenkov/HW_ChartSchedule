@@ -23,9 +23,9 @@
         label.numberOfLines = 0;
         label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self addSubview:label];
-        NSMutableArray *lables = [NSMutableArray new];
+        NSMutableArray *lables = [[NSMutableArray alloc] init];
         CGRect frame = CGRectMake(50, 10, 240, 360);
-        UIView *view = [UIView new]; 
+        UIView *view = [[UIView alloc] initWithFrame:frame];
         view.backgroundColor = [UIColor whiteColor];
         view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         
