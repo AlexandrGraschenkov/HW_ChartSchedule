@@ -470,6 +470,7 @@
 				A8C4970318D22DFC00FF54D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8C4970418D22DFC00FF54D7 /* Build configuration list for PBXNativeTarget "HW_ChartScheduleTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +479,7 @@
 				A8C4970618D22DFC00FF54D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
