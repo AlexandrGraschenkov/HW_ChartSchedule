@@ -10,29 +10,29 @@
 	<string>HW_ChartSchedule</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9229655A-A34B-4FFA-9AC0-923038DCB5D5</key>
-		<string>https://github.com/Sk0rpion/HW_ChartSchedule.git</string>
+		<key>80272517C3CB5191EADCADDD7FEF6DB7EEB470E4</key>
+		<string>https://github.com/Minushinka/HW_ChartSchedule.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HW_ChartSchedule.xcodeproj/project.xcworkspace</string>
+	<string>HW_ChartSchedule.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9229655A-A34B-4FFA-9AC0-923038DCB5D5</key>
+		<key>80272517C3CB5191EADCADDD7FEF6DB7EEB470E4</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Sk0rpion/HW_ChartSchedule.git</string>
+	<string>https://github.com/Minushinka/HW_ChartSchedule.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9229655A-A34B-4FFA-9AC0-923038DCB5D5</string>
+	<string>80272517C3CB5191EADCADDD7FEF6DB7EEB470E4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9229655A-A34B-4FFA-9AC0-923038DCB5D5</string>
+			<string>80272517C3CB5191EADCADDD7FEF6DB7EEB470E4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HW_ChartSchedule</string>
 		</dict>
